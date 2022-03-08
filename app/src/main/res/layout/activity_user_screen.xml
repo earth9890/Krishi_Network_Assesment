@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserScreen">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="293dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:hint="Enter your name"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="293dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:hint="Enter your e-mail"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/photoClick"
+        android:layout_width="275dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Click to capture/select photo"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="188dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/round3"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/photoClick"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/photoClick"
+        app:layout_constraintTop_toBottomOf="@+id/photoClick" />
+
+    <ImageView
+        android:id="@+id/viewImage1"
+        android:layout_width="49dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="@+id/photoClick"
+        app:layout_constraintEnd_toStartOf="@+id/photoClick"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+</androidx.constraintlayout.widget.ConstraintLayout>
